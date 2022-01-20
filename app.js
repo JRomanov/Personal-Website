@@ -9,11 +9,20 @@ const slideNav = () =>
     layers.addEventListener("click", () => 
     {
         nav.classList.toggle("nav-active");
-    });
 
-    navLinks.forEach((link, index) => 
-    {
-        link.style.animation = `navFade 0.5s ease forwards ${index/5+1.5}s`;
+        navLinks.forEach((link, index) => 
+        {
+            if(link.style.animation)
+            {
+                link.style.animation = "";
+            }
+            else
+            {
+                link.style.animation = link.style.animation = `navFade 0.5s ease forwards ${index/5+.5}s`;
+            }
+        });
+
+        layers.classList.toggle("toggle");
     });
 }
 
