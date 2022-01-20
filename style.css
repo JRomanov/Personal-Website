@@ -1,0 +1,111 @@
+/* THIS PROJECT WAS FOLLOWED ALONG A TUTORIAL WHILE LEARNING HOW TO BUILD A WEBSITE. */
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(255, 207, 148);
+}
+
+.logo
+{
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navigation-links
+{
+    display: flex;
+    justify-content: space-around;
+    width: 340px;
+    list-style: none;
+}
+
+.navigation-links a
+{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.layers
+{
+    display: none;
+    cursor: pointer;
+}
+
+.layers div
+{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+}
+
+@media screen and (max-width:1024px) 
+{
+    .navigation-links
+    {
+        width: 540px;
+    }
+}
+
+@media screen and (max-width:768px) 
+{   body
+    {
+      overflow-x: hidden;
+    }
+    .navigation-links
+    {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(255, 207, 148);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+    }
+    .navigation-links li
+    {
+        opacity: 0;
+    }
+
+    .layers
+    {
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%)!important;
+}
+
+@keyframes navFade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
