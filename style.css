@@ -55,6 +55,17 @@ nav
     transition: all .3s ease;
 }
 
+.greeting
+{
+    display: flex;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 24px;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+}
+
 @media screen and (max-width:1024px) 
 {
     .navigation-links
@@ -130,5 +141,5 @@ nav
     position: absolute;
     bottom: 50px;
     left: 50px;
-    transform: scaleX(-1) ;
+    transform: scaleX(-1);
 }
