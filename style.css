@@ -160,17 +160,19 @@ nav
 {
     width: 20%;
     position: relative;
-    height: 50px;
+    height: 42px;
     top: 15vh;
+    overflow: hidden;
 }
 
 .nameSection input
 {
     width: 100%;
-    height: 100%;
+    height: 50%
     color: black;
     padding-top: 20px;
     border: none;
+    outline: none;
 }
 
 .nameSection label
@@ -182,4 +184,38 @@ nav
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid black;
+}
+
+.nameSection label::after
+{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid lightblue;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+}
+
+.content-name
+{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.nameSection input:focus + .label-name .content-name,
+.nameSection input:valid + .label-name .content-name
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: lightblue;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after
+{
+    transform: translateX(0%);
 }
