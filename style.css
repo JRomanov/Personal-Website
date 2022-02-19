@@ -172,6 +172,7 @@ nav
     color: black;
     padding-top: 20px;
     border: none;
+    outline: none;
 }
 
 .nameSection label
@@ -209,7 +210,7 @@ nav
 .nameSection input:focus + .label-name .content-name,
 .nameSection input:valid + .label-name .content-name
 {
-    transform: translateY(-150%);
+    transform: translateY(-100%);
     font-size: 14px;
     color: lightblue;
 }
