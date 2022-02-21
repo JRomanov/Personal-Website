@@ -159,9 +159,10 @@ nav
 .form
 {
     width: 20%;
-    position: relative;
-    height: 42px;
-    top: 15vh;
+    position: absolute;
+    left: 25vw;
+    height: 400px;
+    top: 20vh;
     overflow: hidden;
 }
 
@@ -184,6 +185,7 @@ nav
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid black;
+    top: -39vh;
 }
 
 .nameSection label::after
@@ -227,7 +229,7 @@ nav
     height: 2.5%;
     background-color: lightblue;
     align-items: center;
-    bottom: 50vh;
+    bottom: 20vh;
     left: 26.5vw;
 }
 
@@ -239,7 +241,6 @@ nav
     padding-top: 20px;
     border: none;
     outline: none;
-    bottom: 30vh;
 }
 
 .emailSection label
@@ -251,6 +252,7 @@ nav
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid black;
+    bottom: 34vh;
 }
 
 .emailSection label::after
@@ -264,4 +266,81 @@ nav
     border-bottom: 3px solid lightblue;
     transform: translateX(-100%);
     transition: transform .3s ease;
+}
+
+.content-email
+{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.emailSection input:focus + .label-email .content-email,
+.emailSection input:valid + .label-email .content-email
+{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: lightblue;
+}
+
+.form input:focus + .label-email::after, .form input:valid + .label-email::after
+{
+    transform: translateX(0%);
+}
+
+.companySection input
+{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.companySection label
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+    bottom: 30vh;
+}
+
+.companySection label::after
+{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid lightblue;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+}
+
+.content-company
+{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .3s ease;
+}
+
+.companySection input:focus + .label-company .content-company,
+.companySection input:valid + .label-company .content-company
+{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: lightblue;
+}
+
+.form input:focus + .label-company::after, .form input:valid + .label-company::after
+{
+    transform: translateX(0%);
 }
