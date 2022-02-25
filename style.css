@@ -159,8 +159,9 @@ nav
 .form
 {
     width: 20%;
-    position: relative;
+    position:absolute;
     height: 210px;
+    bottom: 50%;
     top: 30vh;
     overflow: hidden;
 }
