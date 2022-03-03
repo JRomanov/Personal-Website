@@ -160,12 +160,14 @@ input[type=text], textarea
 {
     width: 100%;
     padding: 12px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    outline: none;
+    border-color: rgb(255, 207, 148);
 }
 
 .contact
@@ -173,10 +175,14 @@ input[type=text], textarea
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 input[type=submit]
 {
-
+    background-color: rgb(255, 207, 148);
+    cursor: pointer;
+    width: 100px;
 }
 
