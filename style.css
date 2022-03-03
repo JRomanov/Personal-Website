@@ -61,9 +61,8 @@ nav
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 24px;
-    position: absolute;
-    justify-content: space-around;
-    top: 10vh;
+    justify-content: center;
+    margin-top: 3%;
 }
 
 @media screen and (max-width:1024px) 
@@ -170,11 +169,22 @@ input[type=text], textarea
     border-color: rgb(255, 207, 148);
 }
 
+.contactGreeting
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
 .contact
 {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 2%;
     border-radius: 5px;
     padding: 20px;
 }
@@ -184,5 +194,16 @@ input[type=submit]
     background-color: rgb(255, 207, 148);
     cursor: pointer;
     width: 100px;
+}
+
+.aboutProjects
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
 }
 
