@@ -16,32 +16,6 @@
     <div class="logo">
         <h1>Contact Me</h1>
     </div>
-    <div class="form">
-        <form action="https://formsubmit.co/jromanov@sdsu.edu" method="POST">
-            <div class="nameSection">
-                <input type="text" name="name" required>
-                <label for="name" class="label-name">
-                    <span class="content-name">Name:</span>
-                </label>
-            <!-- Add email, company(optional), and message.-->
-            </div>
-            <div class="emailSection">
-                <input type="text" name="email" required>
-                <label for="email" class="label-email">
-                    <span class="content-email">E-mail:</span>
-                </label>
-            </div>
-            <div class="companySection">
-                <input type="text" name="company" required>
-                <label for="company" class="label-company">
-                    <span class="content-company">Company:</span>
-                </label>
-            </div>
-        </form> 
-    </div>
-    <div>
-        <button type="submit" class="submitButton">Submit</button>
-    </div>
     <ul class="navigation-links">
         <li>
             <a href="index.html">Home</a>
@@ -62,6 +36,20 @@
         <div class="lineThree"></div>
     </div>
     </nav>
+    <div class="contact">
+        <form action="https://formsubmit.co/jromanov@sdsu.edu" method="POST">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Your last name..." >
+
+            <label for="subject">Subject</label>
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your message..."></textarea>
+
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
 <script src="app.js"></script>
 </body>
 </html>

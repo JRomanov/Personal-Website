@@ -156,197 +156,27 @@ nav
     width: 90vw;
 }
 
-.form
-{
-    width: 20%;
-    position:absolute;
-    height: 210px;
-    bottom: 50%;
-    top: 30vh;
-    overflow: hidden;
-}
-
-.nameSection input
+input[type=text], textarea
 {
     width: 100%;
-    height: 100%;
-    color: black;
-    padding-top: 7px;
-    border: none;
-    outline: none;
-    position: relative;
-    bottom: -2vh;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-.nameSection label
+.contact
 {
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-    top: -17vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
 
-.nameSection label::after
+input[type=submit]
 {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid lightblue;
-    transform: translateX(-100%);
-    transition: transform .3s ease;
+
 }
 
-.content-name
-{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all .3s ease;
-}
-
-.nameSection input:focus + .label-name .content-name,
-.nameSection input:valid + .label-name .content-name
-{
-    transform: translateY(-100%);
-    font-size: 14px;
-    color: lightblue;
-}
-
-.form input:focus + .label-name::after, .form input:valid + .label-name::after
-{
-    transform: translateX(0%);
-}
-
-.submitButton
-{
-    position: absolute;
-    width: 5%;
-    height: 2.5%;
-    background-color: lightblue;
-    align-items: center;
-    bottom: 20vh;
-    left: 26.5vw;
-}
-
-.emailSection input
-{
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding-top: 9px;
-    border: none;
-    outline: none;
-    position: relative;
-    bottom: -4vh;
-}
-
-.emailSection label
-{
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-    top: -12vh;
-}
-
-.emailSection label::after
-{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid lightblue;
-    transform: translateX(-100%);
-    transition: transform .3s ease;
-}
-
-.content-email
-{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all .3s ease;
-}
-
-.emailSection input:focus + .label-email .content-email,
-.emailSection input:valid + .label-email .content-email
-{
-    transform: translateY(-100%);
-    font-size: 14px;
-    color: lightblue;
-}
-
-.form input:focus + .label-email::after, .form input:valid + .label-email::after
-{
-    transform: translateX(0%);
-}
-
-.companySection input
-{
-    width: 100%;
-    height: 100%;
-    color: black;
-    padding-top: 15px;
-    border: none;
-    outline: none;
-    position: relative;
-    bottom: -5.5vh;
-}
-
-.companySection label
-{
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-    bottom: 7vh;
-}
-
-.companySection label::after
-{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid lightblue;
-    transform: translateX(-100%);
-    transition: transform .3s ease;
-}
-
-.content-company
-{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all .3s ease;
-}
-
-.companySection input:focus + .label-company .content-company,
-.companySection input:valid + .label-company .content-company
-{
-    transform: translateY(-100%);
-    font-size: 14px;
-    color: lightblue;
-}
-
-.form input:focus + .label-company::after, .form input:valid + .label-company::after
-{
-    transform: translateX(0%);
-}
