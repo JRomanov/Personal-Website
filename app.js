@@ -1,4 +1,4 @@
-//THIS PROJECT WAS FOLLOWED ALONG TUTORIALS WHILE LEARNING HOW TO BUILD A WEBSITE.
+
 
 const slideNav = () =>
 {
@@ -27,3 +27,4 @@ const slideNav = () =>
 }
 
 slideNav();
+
