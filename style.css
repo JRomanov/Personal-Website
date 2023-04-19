@@ -232,3 +232,15 @@ td, th
     bottom: 50px;
     right: 100px;
 }
+
+.githubPic
+{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+}
